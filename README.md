@@ -1,81 +1,67 @@
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=22888258)
-# crackingTheCode_cpp
+1. A 4-digitpasscode has been generated (3374)
 
-🔓 Cracking the Code Game – Instructions
-Objective:
-You and your partner are cybersecurity researchers tasked with cracking a passcode as quickly as possible. You will work through a series of challenges, modifying your algorithm at each step. The goal is to observe how password complexity affects cracking time and understand how to make passwords more secure.
+Passcode found: 3374
+Attempts: 3375
+Passcode cracked in: 7935 nanoseconds!
 
-📌 Step 1: Plan Your Algorithm
 
-Before coding, you must first sketch out your strategy!
+2. A 6-digit passcode has been generated (369460)
 
-Draw your algorithm on the whiteboard.
-Think about:
-What type of loop will you use?
-How will you guess numbers?
-When will your program stop?
-Discuss your approach with your partner and get approval from your instructor before coding.
-🚀 Challenge 1: Crack a 4-Digit Passcode
+Passcode found: 369460
+Attempts: 369461
+Passcode cracked in: 456189 nanoseconds!
 
-Goal: Write an algorithm to find a randomly generated 4-digit integer passcode.
 
-Steps:
-Use the starter code provided.
-Implement an algorithm that searches for the passcode (brute-force or smarter method).
-Run your program and record how long it takes to crack the passcode.
-If you finish early, try to optimize your approach.
-🔎 Discussion Questions:
-How does your algorithm work? (Explain the steps)
-What is the fastest way to crack the password?
-What are real-world examples of this type of attack?
-🔥 Challenge 2: Increase the Passcode Length
+3. A 8-digit passcode has been generated (54024340)
 
-Goal: Modify your program to increase the passcode length and analyze the effect.
+Passcode found: 54024340
+Attempts: 54024341
+Passcode cracked in: 60262144 nanoseconds!
 
-Steps:
-Change the passcode size from 4 digits to 6, then 8 digits.
-Run your program and record the cracking time for each case.
-Observe how the time changes as the passcode length increases.
-🔎 Discussion Questions:
+4. Password generated (a2ab)
+
+Password found: a2ab
+Attempts: 27984
+Password cracked in: 6057840 nanoseconds!
+
+5. 6 digit password (ajaxyb)
+Password found: ajaxyb
+Attempts: 637085028
+Password cracked in: 26824593193 nanoseconds!
+
+
+QUESTIONS
+
+1. How does your algorithm work?
+
+It generates a random password and then tries every possible combination until it matches.
+
+2. What is the fastest way to crack the password?
+Brute force without repeating guesses is the fastest in this case.
 
 3. Why does it take longer to crack a longer password?
+Because each extra character increases the number of combinations exponentially.
 
 4. What strategies do people use to protect their PIN numbers?
-
-🛡️ Challenge 3: Introduce Letters into the Password
-
-Goal: Modify your algorithm to crack a password containing both numbers and letters.
-
-Steps:
-Change the passcode format to include:
-Numbers (0-9)
-Letters (a-d) (You can expand this later!)
-Comment out your digit-only cracking algorithm and write a new algorithm to handle both numbers and letters.
-Run your program and observe the new time to crack the password.
-🔎 Discussion Questions:
+They use longer passwords, avoid patterns, and enable two step authentication.
 
 5. How did adding letters change your algorithm?
+It had to switch from numbers to strings and handle a biger character set.
 
 6. Did this increase the difficulty of cracking the password? Why?
+Yeah, because more possible characters mean more combinations to test.
 
 7. How do strong passwords prevent brute-force attacks?
+They increase length and complexity, making brute force really hard.
 
-🏆 Final Challenge: Custom Password Complexity
+8. What type of passwords are hardest to crack?
+The long, random passwords with a mix of letters, numbers and symbols are the hardest ones to crack.
 
-Goal: Experiment with different password complexities and analyze security impact.
+9. How can companies prevent brute-force attacks?
+By limiting login attempts in a lapse of time, locking accounts, and using two step authentication.
 
-Steps:
-Try longer passwords (10+ characters) with more letters (a-z).
-Try randomizing the search instead of brute force.
-Try optimizing your algorithm to make it smarter.
-🔎 Final Reflection Questions, answer at least 2 of these questions for reflection:
-What type of passwords are hardest to crack?
-How can companies prevent brute-force attacks?
-If you were a hacker, how would you improve your approach?
-What are ethical concerns about password cracking?
-🏁 Conclusion & Competition
-Compare your fastest cracking time with other teams.
-Discuss real-world applications and how cybersecurity protects us.
-Reflect on the importance of strong passwords.
+10. If you were a hacker, how would you improve your approach?
+I would try parallel computing instead of pure brute force or try to find vulnerabilities to access.
 
-Turn in your code via the github classroom assignment, and your answer to the questions via the github or to this assignment in canvas.
+11. What are ethical concerns about password cracking?
+Well, it violates privacy and can be use to steal and cause all kinds of harm.
